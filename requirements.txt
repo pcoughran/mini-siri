@@ -1,0 +1,13 @@
+datasets==3.0.2
+huggingface-hub==0.26.1
+numpy==2.1.2
+openai==1.52.2
+pandas==2.2.3
+PyAudio==0.2.14
+python-dotenv==1.0.1
+pyttsx3==2.98
+requests==2.32.3
+scikit-learn==1.5.2
+SpeechRecognition==3.11.0
+torch==2.5.0
+transformers==4.46.0

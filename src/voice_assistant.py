@@ -2,7 +2,7 @@ from api_handler import APIHandler
 from complex_task_handler import ComplexTaskHandler
 from simple_task_handler import SimpleTaskHandler
 from speech_handler import SpeechHandler
-from task_classifier import TaskClassifier
+from task_classifier.task_classifier import TaskClassifier
 
 # Ties everything together in the main loop, continuously listening to user
 # input and providing responses based on task classification.
