@@ -1,9 +1,6 @@
 from transformers import BertTokenizer, BertForSequenceClassification, Trainer, TrainingArguments
 from datasets import Dataset
 
-import lzma
-print("LZMA module is available!")
-
 # A fine tuned BERT classifier to determine if an input is simple or complex.
 class TaskClassifierModel:
 
@@ -21,7 +18,7 @@ class TaskClassifierModel:
         }
 
         # Convert to Hugging Face dataset
-        dataset = Dataset.from_dict(self.data)
+        self.dataset = Dataset.from_dict(self.data)
 
         # Tokenizer and model setup
         self.tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
